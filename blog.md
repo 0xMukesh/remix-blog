@@ -447,7 +447,12 @@ git push -u origin main
 
    ![](https://imgur.com/fgIkn2L.png)
 
-   - If you are getting error something like this, run `npx remix node` and redeploy
+   - If you are getting error something like this, add a new script to `package.json`
+
+     ```
+     "postinstall": "remix setup node"
+     ```
+
      ![](https://imgur.com/PAG3nla.png)
 
 The entire code for this tutorial is present on my github.
