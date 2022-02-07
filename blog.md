@@ -421,6 +421,35 @@ As our application let's deploy it on vercel 🚀.
    git init
    ```
 
+1. Create a new github repository
+
+1. Push your changes to that repository
+
+```bash
+git remote add origin git@github.com:Kira272921/remix-blog.git # change url to your repo's link
+git add .
+git commit -m "feat: initial commit"
+git branch -M main
+git push -u origin main
+```
+
+1. If you don't have a account on vercel, create one
+
+1. Create a new project
+
+   ![](https://imgur.com/9wfhEQ9.png)
+
+1. Import the remix application from our github account
+
+   ![](https://imgur.com/EMKOgOs.png)
+
+1. Deploy the application
+
+   ![](https://imgur.com/fgIkn2L.png)
+
+   - If you are getting error something like this, run `npx remix node` and redeploy
+     ![](https://imgur.com/PAG3nla.png)
+
 The entire code for this tutorial is present on my github.
 
 https://github.com/kira272921/remix-blog
