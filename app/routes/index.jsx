@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from 'remix';
-import * as firstPost from './posts/build-a-cli-using-nodejs.mdx';
-import * as secondPost from './posts/build-a-rest-api-using-nodejs.mdx';
+import * as cli from './posts/build-a-cli-using-nodejs.mdx';
+import * as restapi from './posts/build-a-rest-api-using-nodejs.mdx';
+import * as remixBlog from './posts/build-a-blog-using-remix-and-mdx.mdx';
 
 function postFromModule(mod) {
   return {
@@ -10,7 +11,11 @@ function postFromModule(mod) {
 }
 
 export const loader = () => {
-  return [postFromModule(firstPost), postFromModule(secondPost)];
+  return [
+    postFromModule(cli),
+    postFromModule(restapi),
+    postFromModule(remixBlog),
+  ];
 };
 
 export default function BlogIndex() {
