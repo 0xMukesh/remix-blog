@@ -1,7 +1,6 @@
 import { Link, useLoaderData } from 'remix';
 import * as cli from './posts/build-a-cli-using-nodejs.mdx';
 import * as restapi from './posts/build-a-rest-api-using-nodejs.mdx';
-import * as remixBlog from './posts/build-a-blog-using-remix-and-mdx.mdx';
 
 function postFromModule(mod) {
   return {
@@ -13,8 +12,7 @@ function postFromModule(mod) {
 export const loader = () => {
   return [
     postFromModule(cli),
-    postFromModule(restapi),
-    postFromModule(remixBlog),
+    postFromModule(restapi)
   ];
 };
 
